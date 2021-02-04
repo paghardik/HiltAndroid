@@ -5,6 +5,7 @@ Hilt android implementation
 
 ```
 buildscript {
+
     ext.hilt_version = '2.31.2-alpha'
 
     dependencies {
