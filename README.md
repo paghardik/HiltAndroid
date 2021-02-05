@@ -44,3 +44,25 @@ android {
     }
 }
 ```
+
+## We use Hilt so we must declare Application class that is annotated with @HiltAndroidApp.
+
+#### This @HiltAndroidApp annotation is generate Hilt components and it attach with Application object lifecycle and provide dependency to it.
+
+```kotlin
+@HiltAndroidApp
+class MyApplication : Application(){
+}
+```
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hiltdemo">
+
+    <application
+        android:name=".MyApplication"
+        ....
+    >
+        
+</application>
+```
